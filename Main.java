@@ -68,7 +68,7 @@ public class Main {
             for(Integer dime: dimesPossibilities){
                 for(Integer nickel: nickelsPossibilities){
                     for(Integer penny: penniesPossibilities){
-                        if ((quarter + dime + nickel + penny) == number){
+                        if ((quarter*quartersValue + dime*dimesValue + nickel*nickelsValue + penny*penniesValues) == number){
                             int[] array = {quarter, dime, nickel, penny};
                             result.add(array);
                         }
